@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Sugestões</title>
+</head>
+<body>
+    <div class="form-container">
+        <a href="admin.html">ADM</a>
+        <h1>Sugestões</h1>
+        <label for="subject">Sobre o que é a sugestão:</label>
+        <textarea id="subject" rows="2" maxlength="35" placeholder="Tema do assunto..." required></textarea>
+        
+        <label for="suggestion">Sugestão:</label>
+        <textarea id="suggestion" rows="5" maxlength="500" placeholder="Digite sua sugestão..." required></textarea>
+        
+        <div class="message" id="message"></div>
+        
+        <button id="submit">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

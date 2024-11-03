@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 2px solid #28a745; /* Verde */
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+.form-container > h1 {
+    text-align: center;
+    margin-bottom:70px;
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.message {
+    color: #28a745; /* Verde */
+    font-weight: bold;
+    font-size: 1.2em; /* Aumenta o tamanho da fonte da mensagem */
+    text-align: center; /* Centraliza a mensagem */
+}
+
+.suggestions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.suggestion-box {
+    background-color: #e7f3fe; /* Azul claro */
+    border: 2px solid #007bff; /* Azul */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center; /* Centraliza o texto dentro do quadrado */
+}
+
+.suggestion-item {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #28a745; /* Verde */
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%; /* Botão ocupa 70% do tamanho do quadrado */
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+button:hover {
+    background-color: #218838; /* Verde mais escuro */
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: #d4edda; /* Verde claro */
+}
+
+#submit{
+
+    margin-left: 50px;
+}
+/* Estilo para as sugestões recebidas */
+.suggestion-item {
+    margin: 10px 0;
+}
+
+.suggestion-title {
+    font-weight: bold;
+    text-transform: uppercase; /* Torna o texto maiúsculo */
+    font-size: 1.2em; /* Aumenta a fonte do título */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre letras */
+
+}
+
+
+@media (max-width: 600px){
+    .suggestion-box {
+
+        padding: 15px;
+        margin: 20px 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+
+    .suggestion-title {
+        font-size: 1em; /* Aumenta a fonte do título */
+    }
+
+    
+    
+}
