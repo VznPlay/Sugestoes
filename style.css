@@ -22,12 +22,20 @@ body {
 }
 
 textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
+    width: 100%; /* Mantém a largura dentro do contêiner */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    margin-bottom: 10px; /* Espaçamento inferior */
 }
+
+.form-container {
+    padding: 20px;
+    border: 2px solid #28a745; /* Verde */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: 800px; /* Adicionando essa linha novamente para reforçar a Alteração 2 */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
 
 label {
     font-weight: bold;
